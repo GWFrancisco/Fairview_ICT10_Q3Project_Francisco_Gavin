@@ -76,22 +76,7 @@ font-family:'Pixelify Sans', sans-serif;
     <br>
 </div>
 
-<script>
-const observer = new MutationObserver(() => {
-    const output = document.getElementById("output1");
-
-    if (output && output.textContent.includes("Account created")) {
-        setTimeout(() => {
-            window.location.href = "team.html";
-        }, 1500); // waits 1.5 seconds
-    }
-});
-
-observer.observe(document.getElementById("output1"), {
-    childList: true,
-    subtree: true
-});
-</script>
 
 </body>
 </html>
+
